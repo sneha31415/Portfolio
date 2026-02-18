@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./sections/navbar";
+import Hero from "./sections/Hero";
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
         {/* navbar */}
         <Navbar />
         {/* hero */}
+        <Hero />
         {/* about */}
         {/* projects */}
         {/* experience */}
