@@ -12,7 +12,9 @@ const HeroText = () => {
                     </p>
                     {/* <get flip word from aceternity> */}
                     <div>
-                        <FlipWords words = {["Secure", "Modern", "Scalable"]}/>
+                        <FlipWords words = {["Secure", "Modern", "Scalable"]}
+                        duration={1800}
+                        className= "font-black text-white text-8xl"/>
                     </div>
                     <p className="text-4xl font-medium text-neutral-300">Web Solutions</p>
                 </div>
