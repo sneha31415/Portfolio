@@ -6,8 +6,17 @@ import { Astronaut } from "../components/Astronaut";
 import { OrbitControls, Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import Loader from "../components/Loader";
+
+// *****for loader testing******
+// const MODEL_DELAY_MS = import.meta.env.DEV ? 1200 : 0;
+// const Astronaut = lazy(() =>
+//   Promise.all([
+//     import("../components/Astronaut"),
+//     new Promise((resolve) => setTimeout(resolve, MODEL_DELAY_MS)),
+//   ]).then(([module]) => ({ default: module.Astronaut }))
+// );
 
 
 
@@ -40,7 +49,7 @@ const Hero = () => {
         </Float>
         
           </Suspense>
-        <OrbitControls />
+        <OrbitControls enableZoom={false} />
       </Canvas>
       </figure>
     </section>
