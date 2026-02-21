@@ -1,7 +1,8 @@
-import React from 'react'
+import  { useRef } from 'react'
 import Card from '../components/Card'
 
 const About = () => {
+    const grid2Container = useRef();
   return (
     <section className="c-space section-spacing"> 
         <h2 className='text-heading'>About me</h2>
@@ -23,41 +24,56 @@ const About = () => {
             </div>
             {/* Grid 2 */}
             <div className='grid-default-color grid-2'>
-                <div className='flex items-center justify-center w-full h-full'>
+                <div 
+                ref = {grid2Container} className='flex items-center justify-center w-full h-full'>
                     <p className='flex items-end text-5xl text-gray-500'>
                         CODE IS CRAFT
                     </p>
                     <Card 
                     style = {{ rotate : "30deg", top : "30%", left : "20%"}}
                     text = "JAVA"
+                    containerRef={grid2Container}
                     />
                     <Card
                     style = {{ rotate : "19deg", top : "10%", left : "50%"}}
                     text = "PYTHON"
+                    containerRef={grid2Container}
                     />
                     <Card 
                     style = {{ rotate : "7deg", top : "10%", left : "2%"}}
-                    text = "C++"/>
+                    text = "C++"
+                    containerRef={grid2Container}
+                    />
                     <Card 
                     style = {{ rotate : "75deg", top : "30%", left : "70%"}}
                     text = "BACKEND"
+                    containerRef={grid2Container}
                     />
                     <Card 
                     style = {{ rotate : "75deg", top : "60%", left : "50%"}}
                     text = "REACT"
+                    containerRef={grid2Container}
                     />
                     <Card 
                     style = {{ rotate : "0deg", top : "70%", left : "20%"}}
-                    text = "SYSTEM DESIGN"/>
+                    text = "SYSTEM DESIGN"
+                    containerRef={grid2Container}
+                    />
                     <Card 
                     style = {{ rotate : "30deg", top : "70%", left : "70%"}}
-                    image="assets/logos/csharp-pink.png"/>
+                    image="assets/logos/csharp-pink.png"
+                    containerRef={grid2Container}
+                    />
                     <Card 
                     style = {{ rotate : "-30deg", top : "50%", left : "20%"}}
-                    image="assets/logos/dotnet-pink.png"/>
+                    image="assets/logos/dotnet-pink.png"
+                    containerRef={grid2Container}
+                    />
                     <Card 
                     style = {{ rotate : "-30deg", top : "30%", left : "0%"}}
-                    image="assets/logos/blazor-pink.png"/>
+                    image="assets/logos/blazor-pink.png"
+                    containerRef={grid2Container}
+                    />
                     
 
                 </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 
 // grab cards
-const Card = ({ style, text, image }) => {
+const Card = ({ style, text, image, containerRef }) => {
   return image && !text ? (
     <motion.img 
     className="absolute w-15 cursor-grab" 
@@ -11,6 +11,10 @@ const Card = ({ style, text, image }) => {
     whileHover = {{ scale : 1.05 }}
     // to be able to drag the elements :
     drag
+    // avoid card to go out of container
+    dragConstraints = {containerRef}
+    // make it bounce back
+    dragElastic={1}
     />
   ) : (
     <motion.div
@@ -18,6 +22,8 @@ const Card = ({ style, text, image }) => {
       style={style}
       whileHover = {{ scale : 1.05 }}
       drag
+      dragConstraints = {containerRef}
+      dragElastic={1}
     >
       {text}
     </motion.div>
