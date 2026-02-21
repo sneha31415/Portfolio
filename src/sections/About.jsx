@@ -27,7 +27,39 @@ const About = () => {
                     <p className='flex items-end text-5xl text-gray-500'>
                         CODE IS CRAFT
                     </p>
-                    <Card />
+                    <Card 
+                    style = {{ rotate : "30deg", top : "30%", left : "20%"}}
+                    text = "JAVA"
+                    />
+                    <Card
+                    style = {{ rotate : "19deg", top : "10%", left : "50%"}}
+                    text = "PYTHON"
+                    />
+                    <Card 
+                    style = {{ rotate : "7deg", top : "10%", left : "2%"}}
+                    text = "C++"/>
+                    <Card 
+                    style = {{ rotate : "75deg", top : "30%", left : "70%"}}
+                    text = "BACKEND"
+                    />
+                    <Card 
+                    style = {{ rotate : "75deg", top : "60%", left : "50%"}}
+                    text = "REACT"
+                    />
+                    <Card 
+                    style = {{ rotate : "0deg", top : "70%", left : "20%"}}
+                    text = "SYSTEM DESIGN"/>
+                    <Card 
+                    style = {{ rotate : "30deg", top : "70%", left : "70%"}}
+                    image="assets/logos/csharp-pink.png"/>
+                    <Card 
+                    style = {{ rotate : "-30deg", top : "50%", left : "20%"}}
+                    image="assets/logos/dotnet-pink.png"/>
+                    <Card 
+                    style = {{ rotate : "-30deg", top : "30%", left : "0%"}}
+                    image="assets/logos/blazor-pink.png"/>
+                    
+
                 </div>
             </div>
             {/* Grid 3 */}
