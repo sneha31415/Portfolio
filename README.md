@@ -5,4 +5,6 @@ aceternity
 scroll-based paralax using motion.dev
 
 sketchfab.com for astronaut model
+
+magicui.design  
 -->
